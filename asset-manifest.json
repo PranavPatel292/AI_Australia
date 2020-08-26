@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/AI_Australia/static/css/main.2076ff03.chunk.css",
+    "main.js": "/AI_Australia/static/js/main.19fb372e.chunk.js",
+    "main.js.map": "/AI_Australia/static/js/main.19fb372e.chunk.js.map",
+    "runtime-main.js": "/AI_Australia/static/js/runtime-main.e1d9118d.js",
+    "runtime-main.js.map": "/AI_Australia/static/js/runtime-main.e1d9118d.js.map",
+    "static/css/2.11829350.chunk.css": "/AI_Australia/static/css/2.11829350.chunk.css",
+    "static/js/2.4b7b5cbe.chunk.js": "/AI_Australia/static/js/2.4b7b5cbe.chunk.js",
+    "static/js/2.4b7b5cbe.chunk.js.map": "/AI_Australia/static/js/2.4b7b5cbe.chunk.js.map",
+    "index.html": "/AI_Australia/index.html",
+    "precache-manifest.62dae646b8025f83843d15990e3a2e9c.js": "/AI_Australia/precache-manifest.62dae646b8025f83843d15990e3a2e9c.js",
+    "service-worker.js": "/AI_Australia/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/AI_Australia/static/css/2.11829350.chunk.css.map",
+    "static/css/main.2076ff03.chunk.css.map": "/AI_Australia/static/css/main.2076ff03.chunk.css.map",
+    "static/js/2.4b7b5cbe.chunk.js.LICENSE.txt": "/AI_Australia/static/js/2.4b7b5cbe.chunk.js.LICENSE.txt",
+    "static/media/SignUp.css": "/AI_Australia/static/media/iStock-1026914886.bab14c7e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1d9118d.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.4b7b5cbe.chunk.js",
+    "static/css/main.2076ff03.chunk.css",
+    "static/js/main.19fb372e.chunk.js"
+  ]
+}
