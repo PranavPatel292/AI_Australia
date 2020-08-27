@@ -1,0 +1,60 @@
+.first{
+    height: 400px;
+    background-color:gray;
+    border-radius: 5px;
+    /* background: blue url(./images/iStock-1026914886.jpg) no-repeat center bottom; position: relative;  */
+}
+
+.seven{
+    height: auto;
+    padding: 50px 0 20px 0;
+    background-color: #71e3df;
+    border-radius: 5px;
+}
+.second{
+    height: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+.third{
+    height: auto;
+}
+
+.fourth{
+    height: auto;
+}
+
+.sixth{
+    height: auto;
+}
+
+.fifth{
+    height: auto;
+}
+
+.team_member_name{
+    font-size: large;
+    font-weight: bold;
+    text-justify: auto;
+    text-align: center;
+}
+
+.team_member_posotion{
+    font-size: medium;
+    font-weight: 200;
+    text-justify: auto;
+    text-align: center;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+.team_member_info{
+    font-size: medium;
+    text-justify: auto;
+    text-align: center;
+}

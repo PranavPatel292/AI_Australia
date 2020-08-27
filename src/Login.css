@@ -1,0 +1,36 @@
+.image1{
+    background-image: none; background-repeat: no-repeat; background-size: cover; background-position: 0px 350px; background-size: 100% 100%;
+    
+}
+
+.bg{
+  background-color:gray;
+}
+
+.logo{
+  padding: 150px 0 100px 0;
+}
+
+.login_form{
+  padding: 50px 50px 50px 50px;
+}
+
+@media only screen and (min-width: 992px) {
+    .image1 { 
+       background-image: url('./images/images.jpg'); 
+       height: 800px;
+    }
+  }
+
+  @media only screen and (min-width: 1122px) {
+    .image1 { 
+       background-image: url('./images/iStock-1026914886.jpg'); 
+       height: 800px;
+    }
+  }
+.first1{
+    height: auto;
+    width: auto;
+    padding: 50px 0 50px 0;
+}
+

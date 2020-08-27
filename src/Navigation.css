@@ -1,0 +1,5 @@
+.navbar a:hover{
+    text-decoration-line: underline;
+    font-variant-caps: small-caps;
+    color: blue !important;
+}

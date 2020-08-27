@@ -1,0 +1,18 @@
+div{
+    display: inline-flex;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+div img{
+    margin: 1em 0 1em 15em; /*top right bottom left*/
+    border-radius: 2px;
+}
+
+div h3{
+    margin: 1em 0 1em 1em;
+    font-size: 1.5em;
+}
+
