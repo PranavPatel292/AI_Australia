@@ -8,12 +8,13 @@ import Case_Studies from "./Case_Studies.js"
 import Resources from "./Resources.js"
 import SignUp from "./SignUp"
 import Login from "./Login"
+import Recrutier from './Recruiter';
 
 function App() {
   return (
     <div>
       {/*Header*/}
-      <Navigation />
+      
       <Switch>
         <Route exact path="/" component={AboutUs} />
         <Route exact path="/technology" component={Technology} />
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/Resources" component={Resources} />
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/rec" component={Recrutier}/>
         <Redirect to="/" />
       </Switch>
       {/*Footer*/}
