@@ -77,7 +77,7 @@ class Recrutier extends React.Component {
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="col-1 col-lg-12">
+                                                    <div class="col-12 col-lg-12">
                                                         <li className="nav-item">
                                                         <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Settings</NavLink></span>
                                                         </li>
