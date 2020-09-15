@@ -1,10 +1,11 @@
 import React from "react"
+import Header from "./header"
 
 class Resources extends React.Component{
     render(){
         return(
             <div>
-                <h1>Resources</h1>
+                <Header/>
             </div>
         )
     }

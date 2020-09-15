@@ -1,98 +1,192 @@
 import React from 'react'
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
-import { NavLink } from 'react-router-dom';
+import Recruiter_Nav from "./Recruiter_Nav"
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 import "./Recruiter.css"
+import history from './history'
 
 class Recrutier extends React.Component {
     render() {
         return (
             <div id="recrutier">
                 <div className="container-fluid nav_bg">
+                <div class="col-12 mx-auto">
                     <div className="row">
-                        <div className="col-10 mx-auto" >
-                            <div class="row ">
-                                <div class="col-12 col-lg-2 verticalHeight" >
-                                    
-                                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                        <div className="col-12 col-lg-12 col-sm-12 mx-auto" >
+                            <div className="row">
 
+                                <div className="col-12 col-lg-2 col-sm-12" >
+                                    <Recruiter_Nav />
+                                </div>
 
-                                        <div class="row">
-                                            <div class="col-12 col-lg-2">
-                                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                                    <span class="navbar-toggler-icon"></span>
-                                                </button>
+                                <div className="col-12 col-lg-8 col-sm-12" >
+
+                                    <div className="row cust_rec">
+                                        <div className="col-6 col-lg-6 col-sm-6">
+                                            <div className="row justify-content-start">
+                                                <h4>Recrutier's Company Page</h4>
                                             </div>
                                         </div>
 
-                                        <div className="collapse navbar-collapse " id="navbarSupportedContent">
-                                            <ul className="navbar-nav padding-nav h-100 flex-column">
-
-                                            <div class="row">
-                                                    <div class="col-12 col-lg-12">
-                                                        <li className="nav-item">
-                                                            <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Schabu</NavLink></span>
-                                                        </li>
-                                                    </div><br/><br/><br/><br/><br/><br/>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-12">
-                                                        <li className="nav-item">
-                                                        <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Home</NavLink></span>
-                                                        </li>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-12">
-                                                        <li className="nav-item">
-                                                        <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Job Position</NavLink></span>
-                                                        </li>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-12">
-                                                        <li className="nav-item">
-                                                        <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Candidate</NavLink></span>
-                                                        </li>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-12">
-                                                        <li className="nav-item">
-                                                        <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Notification</NavLink></span>
-                                                        </li>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-12">
-                                                        <li className="nav-item">
-                                                        <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Archives</NavLink></span>
-                                                        </li>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-12">
-                                                        <li className="nav-item">
-                                                        <span><img src="" alt="img"/><NavLink className="nav-link" style={{display: "inline-block"}} to="#" exact>Settings</NavLink></span>
-                                                        </li>
-                                                    </div>
-                                                </div>
-
-
-                                            </ul>
+                                        <div className="col-6 col-lg-6 col-sm-6">
+                                            <div className="row justify-content-end">
+                                            <p>something can go here!</p>
+                                            </div>
                                         </div>
-                                    </nav>
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col-6 col-lg-6 col-sm-6">
+                                            <div className="row justify-content-start">
+                                                <span>
+                                                    <p>Somethings will go here!</p>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-6 col-lg-6 col-sm-6">
+                                            <div className="row justify-content-end">
+                                            <Button variant="primary" onClick={()=> history.push('/buttonJobs')}>Create New Jobs</Button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col-12 col-lg-12 col-sm-12">
+                                            <h3>Active Job Position</h3>
+                                        </div>
+                                    </div>
+
+                                    <div className="row justify-content-around">
+                                        <div className="col-12 col-lg-6 col-sm-12 col-md-6">
+                                            <div className="row justify-content-around">
+                                                <Card style={{ width: '18rem' }}>
+                                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                                    <Card.Body>
+                                                        <Card.Title>Card Title</Card.Title>
+                                                        <Card.Text>
+                                                            Some quick example text to build on the card title and make up the bulk of
+                                                            the card's content.
+                                                        </Card.Text>
+
+                                                        <div className="col-12 col-lg-12 justify-content-start">
+                                                            <div className="row">
+                                                                <div className="col-12 col-lg-6 justify-content-start">
+                                                                    <Card.Text>
+                                                                        500
+                                                                    </Card.Text>
+                                                                </div>
+
+                                                                <div class="col-12 col-lg-6 justify-content-end">
+                                                                    <Card.Text>
+                                                                        20/09/20
+                                                                    </Card.Text>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="col-12 col-lg-12 justify-content-start">
+                                                            <div className="row">
+                                                                <div className="col-12 col-lg-6 justify-content-start">
+                                                                    <Card.Text>
+                                                                        Candidates
+                                                                    </Card.Text>
+                                                                </div>
+
+                                                                <div class="col-12 col-lg-6 justify-content-end">
+                                                                    <Card.Text>
+                                                                        Deadline
+                                                                    </Card.Text>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </Card.Body>
+                                                </Card>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-12 col-lg-6 col-sm-12 col-md-6">
+                                            <div className="row justify-content-around">
+                                            <Card style={{ width: '18rem' }}>
+                                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                                    <Card.Body>
+                                                        <Card.Title>Card Title</Card.Title>
+                                                        <Card.Text>
+                                                            Some quick example text to build on the card title and make up the bulk of
+                                                            the card's content.
+                                                        </Card.Text>
+
+                                                        <div className="col-12 col-lg-12 justify-content-start">
+                                                            <div className="row">
+                                                                <div className="col-12 col-lg-6 justify-content-start">
+                                                                    <Card.Text>
+                                                                        500
+                                                                    </Card.Text>
+                                                                </div>
+
+                                                                <div class="col-12 col-lg-6 justify-content-end">
+                                                                    <Card.Text>
+                                                                        20/09/20
+                                                                    </Card.Text>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="col-12 col-lg-12 justify-content-start">
+                                                            <div className="row">
+                                                                <div className="col-12 col-lg-6 justify-content-start">
+                                                                    <Card.Text>
+                                                                        Candidates
+                                                                    </Card.Text>
+                                                                </div>
+
+                                                                <div class="col-12 col-lg-6 justify-content-end">
+                                                                    <Card.Text>
+                                                                        Deadline
+                                                                    </Card.Text>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </Card.Body>
+                                                </Card>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/><br/><br/><br/><br/>
+                                    <div className="row justify-content-around">
+                                        <div className="col-12 col-lg-6 col-sm-12">
+                                            <div className="row justify-content-around">
+                                                <h3>Candidate Numbers</h3>
+                                            </div>
+                                            <div className="row justify-content-around">
+                                                <img src="#" alt="candidatesNumbers"/>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-12 col-lg-6 col-sm-12">
+                                        <div className="row justify-content-around">
+                                                <h3>Most common traits?</h3>
+                                            </div>
+                                            <div className="row justify-content-around">
+                                                <img src="#" alt="commonTraits"/>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
                                 </div>
+
+
                             </div>
+
                         </div>
+
                     </div>
                 </div>
+            </div>
             </div>
         )
     }

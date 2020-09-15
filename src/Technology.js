@@ -1,14 +1,15 @@
 import React from "react"
 import "./Technology.css"
 import img1 from "./images/iStock-1026914886.jpg"
+import Header from "./header";
 
 class Technology extends React.Component{
     render(){
         return(
             <div id="about_us">
                 <div class="container-fluid ">
+                <Header/>
                     <div class="col-10 mx-auto">
-
                         {/*move the below code [Get in touch] to new file as it is used in two or more place */}
                         <div class="row">
                             <div class="col-12 mx-auto">

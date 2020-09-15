@@ -1,0 +1,13 @@
+.cust_card{
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 0 0 20px 0;
+}
+
+.color{
+    background-color: aqua;
+}
+
+h1, th:hover{
+    cursor: pointer;
+}

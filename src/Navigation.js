@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import "./Navigation.css"
+import history from './history'
 
 class Navigation extends React.Component{
     render(){
@@ -22,16 +23,16 @@ class Navigation extends React.Component{
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav padding-nav justify-content-between w-100">
                                     <li className="nav-item">
-                                        <NavLink className="nav-link " to="/" exact>About Us</NavLink>
+                                        <NavLink className="nav-link " onClick={()=> history.push('/')} to="/" exact>About Us</NavLink>
                                     </li>
                                     <li className="nav-item ">
-                                        <NavLink className="nav-link " to="/technology">Technology</NavLink>
+                                        <NavLink className="nav-link " onClick={()=> history.push('/technology')} to="/technology">Technology</NavLink>
                                     </li>
                                     <li className="nav-item ">
-                                        <NavLink className="nav-link" to="/Case_Studies">Case Studies</NavLink>
+                                        <NavLink className="nav-link"  onClick={()=> history.push('/Case_Studies')} to="/Case_Studies">Case Studies</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link " to="/Resources">Resources</NavLink>
+                                        <NavLink className="nav-link" onClick={()=> history.push('/rec')} to="/rec">Resources</NavLink>
                                     </li>
                                 </ul>
                             </div>
